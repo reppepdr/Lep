@@ -41,7 +41,8 @@
 
 /* small box */
 .smallBox {
-    background: #A3B4AE;
+    background-image: none !important;
+    background: #A3B4AE !important;
     color: #000;
     border-radius: 3px;
     padding: 20px;
