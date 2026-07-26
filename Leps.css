@@ -1,15 +1,18 @@
 /* boxes made by Chris (#105465) and are NOT to be used in any commissions but mine. my code my rules. they are also not to be packaged with any commissions or free css. these same rules are listed on my free css site. */
 
 .bigBox {
-    background: transparent url("https://iili.io/CeOiCAJ.md.png") center/cover no-repeat !important;
-    color: #000;
-    border-radius: 3px;
-    padding: 30px;
-    margin: 20px;
-    margin-bottom: 0;
-    height: 80px;
-    overflow: hidden;
-    transition: 2s;
+background-image: url("https://iili.io/CeOiCAJ.md.png");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+color: #000;
+border-radius: 3px;
+padding: 30px;
+margin: 20px;
+margin-bottom: 0;
+height: 80px;
+overflow: hidden;
+transition: 2s;
 }
 
 .bigBox:hover,
