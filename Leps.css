@@ -1,26 +1,61 @@
-/* boxes made by Chris (#105465) and are NOT to be used in any commissions but mine. my code my rules. they are also not to be packaged with any commissions or free css. these same rules are listed on my free css site. */
-
 .bigBox {
-background-image: url("https://iili.io/CeOiCAJ.md.png");
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-color: #000;
-border-radius: 3px;
-padding: 30px;
-margin: 20px;
-margin-bottom: 0;
-height: 80px;
-overflow: hidden;
-transition: 2s;
-} 
+    background-image: url("https://iili.io/CeOiCAJ.md.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
 
-.bigBox:hover,
+    color: #000;
+    border-radius: 3px;
+    padding: 30px;
+    margin: 20px;
+    margin-bottom: 0;
+
+    height: 80px;
+    overflow: hidden;
+    transition: 2s;
+}
+
+.bigBox:hover {
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.scrollSection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 !important;
+}
+
+
+.smallBox {
+    background: #A3B4AE;
+    background-image: none;
+
+    color: #000;
+    border-radius: 3px;
+    padding: 20px;
+
+    height: 60px;
+    width: 450px;
+
+    margin: 20px;
+    margin-bottom: 0;
+
+    overflow: hidden;
+    transition: 2s;
+}
+
+
 .smallBox:hover {
     height: 300px;
-    overflow-x: hidden;
     overflow-y: auto;
+    overflow-x: hidden;
 }
+
 
 .bigBox h1,
 .bigBox h2,
@@ -30,44 +65,4 @@ transition: 2s;
 .smallBox h3 {
     margin: 0;
     color: inherit;
-}
-
-/* section holding small boxes */
-.scrollSection {
-    display: flex;
-    justify-content: center;
-    padding: 0 !important;
-}
-
-/* small box */
-.smallBox {
-    background-image: none !important;
-    background: #A3B4AE !important;
-    color: #000;
-    border-radius: 3px;
-    padding: 20px;
-    height: 60px;
-    width: 450px;
-    margin: 20px;
-    margin-bottom: 0;
-    overflow: hidden;
-    float: left;
-    transition: 2s;
-}
-
-@media (max-width: 768px) {
-    #fraProfileContent.hidden-xs {
-        display: block !important;
-    }
-
-    .bigBox,
-    .smallBox {
-        height: 150px !important;
-        overflow: auto;
-    }
-
-    .bigBox:hover,
-    .smallBox:hover {
-        height: 150px !important;
-    }
 }
